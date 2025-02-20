@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krodity</title>
+    <link rel="icon" type="image/png" href="Imgs/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+    <div class="profile">
+        <div class="profile-picture">
+            <img src="Imgs/vwall.jpg" alt="Profile Picture">
+        </div>
+        <p class="Krodity">Krodity</p>
+    </div>
+    
+    <!-- Search bar -->
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q" placeholder="Type to search..." required>
+            
+        </form>
+    </div>
+
+    <!-- YT Search -->
+    <div class="yt-search-container">
+        <form action="https://www.youtube.com/results" method="GET" target="_blank" class="yt-search">
+            <input type="text" name="search_query" placeholder="Search YouTube..." required>
+        </form>
+    </div>
+
+    
+
+    <script>
+
+        document.querySelector('.profile-picture').addEventListener('click', function() {
+            window.location.href = 'page2.html';
+        });
+    </script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        }
+    });
+</script>
+
+
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('Other/curive.ttf') format('truetype');
+        }
+    </style>
+</body>
+</html>
+

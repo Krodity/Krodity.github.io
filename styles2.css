@@ -1,0 +1,146 @@
+body {
+    font-family: "CustomFont", sans-serif;
+    background-image: url("Imgs/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Krodity {
+    color: white;
+    font-size: 2rem;
+    font-family: "CustomFont";
+    margin-top: 10px;
+}
+
+.search-container, .yt-search-container {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container form, .yt-search-container form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+.quicklinks {
+    margin-top: 7.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+
+.quicklink {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.quicklink:hover {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.quicklink.crunchy, .quicklink.freecodecamp, .quicklink.sunshine, .quicklink.youtube, .quicklink.amazon {
+    color: cyan;
+}
+
+.quicklink.crunchy:hover, .quicklink.freecodecamp:hover, .quicklink.sunshine:hover, .quicklink.youtube:hover, .quicklink.amazon:hover {
+    color: goldenrod;
+}
+
+
+.Krodity:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Krodity {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+
+    .quicklinks {
+        grid-template-columns: 1fr;
+    }
+
+    .body {
+        background-image: url(Imgs/vwall.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url("Other/curive.ttf") format('truetype');
+}
